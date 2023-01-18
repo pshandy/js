@@ -1,15 +1,16 @@
 body {
 	background-color: yellow;
 }
-
 header, main, footer {
 	min-width: 855px;
 }
-
+header .container, main .container, footer .container {
+	max-width: 855px;
+	margin: auto;
+}
 header {
 	background-color: white;
 }
-
 main {
 	background-color: white;
 }
