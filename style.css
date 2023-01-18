@@ -18,24 +18,42 @@ h1, h2, h3, h4 {
 
 h1 {
 	font-size: 3em;
+	font-style: italic;
+	margin: 20px 0 10px 0;
 }
 
 h2 {
 	font-size: 1.9em;
+	margin-bottom: 10px;
 }
 
 h3 {
 	font-size: 1.29em;
+	margin: 10px 0 10px 0;
 }
 
 h5 {
 	font-size: 1.4em;
+	margin: 20px 0 10px 0;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: red;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: red;
 }
 
 header {
 	background-color: white;
 	overflow: auto;
-}
+	padding: 25px 0 25px 0;
+	border-bottom: 1px solid #ddd;
+}	
 
 header h1 {
 	float: left;
@@ -52,6 +70,11 @@ main {
 	overflow: auto;
 }
 
+main .container {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
 main .left_main_container {
 	float: left;
 	width: 570px;
@@ -60,6 +83,10 @@ main .left_main_container {
 main .right_main_container {
 	float: right;
 	width: 285px;
+}
+
+main .left_main_container ul {
+	list-style: inside;
 }
 
 footer {
@@ -75,4 +102,3 @@ footer .sitemap {
 	float: right;	
 	width: 285px;
 }
-
