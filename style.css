@@ -118,3 +118,7 @@ footer .sitemap {
     padding: 5px;
     color: black;
 }
+
+.tabs a span.active {
+    background: red;
+}
