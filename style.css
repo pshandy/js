@@ -108,6 +108,32 @@ footer .sitemap {
     width: 285px;
 }
 
+main .content {
+    background: #eee;
+    padding: 10px;
+}
+
+main .content li {
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+    background: white;
+}
+
+main .content input {
+    width: 50%;
+    height: 26px;
+    border-radius: 5px 5px 5px 5px;
+	text-align: justify;
+}
+main .content button {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px 5px 5px 5px;
+	margin:10px;
+	background: white;
+}
+
 .tabs a span {
     display: inline-block;
     border-radius: 5px 5px 0 0;
@@ -120,5 +146,5 @@ footer .sitemap {
 }
 
 .tabs a span.active {
-    background: red;
+    background: #eee;
 }
