@@ -3,28 +3,24 @@ var main = function () {
     "use strict";
 //    console.log("hello, world!");
     
-    $(".tabs a:nth-child(1)").on("click", function () {
-        //Делаем все вкладки неактивными
+    var makeTabActive = function (tabNumber) {
+        var tabSelector = ".tabs a:nth-child(" + tabNumber + ") span";
         $(".tabs span").removeClass("active");
-        //Делаем активной первую вкладку
-        $(".tabs a:nth-child(1) span").addClass("active");
-        //Очищаем основное содержание, чтобы переопределить его
-        $("main .content").empty();
-        //Возвращается false, так как мы не переходим по ссылке
+        $(tabSelector).addClass("active");
+    }
+    
+    $(".tabs a:nth-child(1)").on("click", function () {
+        makeTabActive(1);
         return false;
     });
     
     $(".tabs a:nth-child(2)").on("click", function () {
-        $(".tabs span").removeClass("active");
-        $(".tabs a:nth-child(2) span").addClass("active");
-        $("main .content").empty();
+        makeTabActive(2);
         return false;
     });
     
     $(".tabs a:nth-child(3)").on("click", function () {
-        $(".tabs span").removeClass("active");
-        $(".tabs a:nth-child(3) span").addClass("active");
-        $("main .content").empty();
+        makeTabActive(3);
         return false;
     });
     
