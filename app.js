@@ -19,15 +19,18 @@ var main = function (toDoObjects) {
                 }
                 $('main .content').append($content);
                 
-            } else if ($element.parent().is(':nth-child(2)')) {
+            }  else if ($element.parent().is(':nth-child(2)')) {
                 var $content = $('<ul>');
                 toDos.forEach(function(todo) {
                    $content.append($('<li>').text(todo)); 
                 });
                 $('main .content').append($content);
-                
-                
+            
             } else if ($element.parent().is(':nth-child(3)')) {
+                console.log("abiba")
+                
+                
+            } else if ($element.parent().is(':nth-child(4)')) {
                 var $button = $('<button class="btn">+</button>');
                 var $input = $('<input type="text" class="inp">');
                 $button.on('click', function(element) {
