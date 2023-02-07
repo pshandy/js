@@ -123,6 +123,7 @@ main .content li {
 main .content input {
     width: 50%;
     height: 26px;
+    margin-bottom: 10px;
     border-radius: 5px 5px 5px 5px;
 	text-align: justify;
 }
@@ -130,7 +131,7 @@ main .content button {
     height: 30px;
     width: 30px;
     border-radius: 5px 5px 5px 5px;
-	margin:10px;
+	margin-left:10px;
 	background: white;
 }
 
