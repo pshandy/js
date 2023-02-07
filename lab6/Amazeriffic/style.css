@@ -1,0 +1,151 @@
+body {
+    background-color: yellow;
+    font-family: 'Droid sans';
+}
+
+header, main, footer {
+    min-width: 855px;
+}
+
+header .container, main .container, footer .container {
+    max-width: 855px;	
+    margin: auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu';
+}
+
+h1 {
+    font-size: 3em;
+    font-style: italic;
+    margin: 10px 0 10px 0;
+}
+
+h2 {
+    font-size: 1.9em;
+    margin: 10px 0 10px 0;
+}
+
+h3 {
+    font-size: 1.29em;
+    margin: 10px 0 10px 0;
+}
+
+h5 {
+    font-size: 1.4em;
+    margin: 10px 0 10px 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+header {
+    background-color: white;
+    overflow: auto;
+    padding: 25px 0 25px 0;
+    border-bottom: 1px solid #ddd;
+}	
+
+header h1 {
+    float: left;
+    width: 570px;
+}
+
+header nav {
+    float: right;
+    width: 285px;
+}
+
+main {
+    background-color: white;
+    overflow: auto;
+}
+
+main .container {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+main .left_main_container {
+    float: left;
+    width: 570px;
+}
+
+main .right_main_container {
+    float: right;
+    width: 285px;
+}
+
+main .left_main_container ul {
+    list-style: inside;
+}
+
+footer {
+    overflow: auto;
+}
+
+footer .container {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+footer .contact {
+    float: left;
+    width: 570px;
+}
+
+footer .sitemap {
+    float: right;	
+    width: 285px;
+}
+
+main .content {
+    background: #eee;
+    padding: 10px;
+}
+
+main .content li {
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+    background: white;
+}
+
+main .content input {
+    width: 50%;
+    height: 26px;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 5px 5px;
+	text-align: justify;
+}
+main .content button {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px 5px 5px 5px;
+	margin-left:10px;
+	background: white;
+}
+
+.tabs a span {
+    display: inline-block;
+    border-radius: 5px 5px 0 0;
+    width: 100px;
+    margin-right: 10px;
+    text-align: center;
+    background: #ddd;
+    padding: 5px;
+    color: black;
+}
+
+.tabs a span.active {
+    background: #eee;
+}
