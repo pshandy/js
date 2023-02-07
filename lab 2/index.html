@@ -3,27 +3,23 @@
     <head>
         <title>Главная</title>
     </head>
+    <header>
+        Java Online
+    </header>
     <body>
-        <table width="100%" border="1">
-            <tr>
-                <td>Навигация</td>
-                <td>Содержимое</td>
-                <td>Последние статьи</td>
-            </tr>
-            <tr>
+        <main>
+            <div class="container" width="100%">
 
-                <td width="20%">
+                <div class="col1">
                     <h3><a href="index.html">Главная</a></h3>
                     <h3><a href="se.html">Java SE</a></h3>
                     <h3><a href="web.html">Java WEB</a></h3>
                     <h3><a href="android.html">Android</a></h3>
-                </td>
+                </div>
 
-                <td width="60%">
-
+                <div class="col2">
                     <h1>Java онлайн для разработчиков</h1>
                     На сайте представлены самые важные и необходимые Java разработчику темы и технологии, фреймворки и библиотеки, утилиты и инструменты разработки. Огромное количество информации сопровождается многочисленными примерами. Информация структурирована по разделам и может быть использована в качестве справочного пособия java online.
-                    
                     <h2>Раздел «Java SE»</h2>
                     В разделе Java SE приводится базовая информация, которая используется в различных технологиях Java как для разработки desktop'ных и WEB приложений, так и мобильных приложений :
                     <ul>
@@ -38,21 +34,18 @@
                         <li>Рефлексия кода : reflection;</li>
                         <li>Многопоточное программирование : Thread, Runnable, Concurrent.</li>
                     </ul>
-
                     <h3>Раздел «Java WEB»</h3>
                     Для разработчиков интернет/интранет сайтов в разделе Java WEB представлены такие технологии Java Enterprise Edition (Java EE) и фреймворки, как
-
                     <li>JavaServer Page JSP;</li>
                     <li>Сервлеты Servlet;</li>
                     <li>Фреймворк Struts2;</li>
                     <li>Фреймворк JSF (JavaServer Faces);</li>
                     <li>Фреймворк GWT (Google Web Toolkit);</li>
-                    
                     <h2>Раздел «Android»</h2>
                     В разделе Android представлены среда разработки Android Studio и описание с примерами разработки Android приложений.
-                </td>
+                </div>
 
-                <td width="20%">
+                <div class="col3">
                     <ul>
                         <li><a href="#">Активности Android</a></li>
                         <li><a href="#">Fragment dynamic</a></li>
@@ -61,10 +54,58 @@
                         <li><a href="#">Data Binding</a></li>
                         <li><a href="#">Пример MVVM</a></li>
                     </ul>
-                </td>
-
-            </tr>
-        </table>
+                </div>
+            </div>
+        </main>
 
     </body>
+    <footer>
+        Copyright © 0001-2022
+    </footer>
+
+    <style>
+
+        header, body, footer {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+        }
+
+        header 
+        {
+            text-align: center;
+            background: #949EAC;
+            font-size: 150%;
+        }
+
+        footer {
+            text-align: center;
+            background: #949EAC;
+            clear: both;
+        }
+
+        body {
+                        background: azure
+        }
+        
+        .col1 {
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+
+        .col2 {
+            float: left;
+            width: 60%;
+            background-color: white
+        }
+
+        .col3 {
+            float: left;
+            width: 20%;
+        }
+
+    </style>
+
 </html>
